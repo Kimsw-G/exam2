@@ -33,12 +33,13 @@
             <td>
                 <select name="outer_code">
                 <c:forEach items="${list}" var="item">
-                    <option value="${item.outer_code}">${item.outer_code}</option>
+                    <option value="${item.outer_code}">${item.location}</option>
                 </c:forEach>
                 </select>
             </td>
         </tr>
     </table>
+    <input type="submit" value="go">
     </form>
     </div>
 </div>

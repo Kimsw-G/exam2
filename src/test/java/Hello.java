@@ -3,6 +3,8 @@ import com.koreait.spring2.service.ApartService;
 
 public class Hello {
 
+
+
     public static void main(String[] args) {
         SearchDTO searchDTO = new SearchDTO();
         searchDTO.setDeal_year(2015);

@@ -1,4 +1,4 @@
-create database apartment;
+create database apartment default character set utf8 collate utf8_general_ci;
 use apartment;
 
 create table location_code(
@@ -19,13 +19,15 @@ values
 ('달서구',27290,8),
 ('달성군',27710,9);
 
+drop table apartment_info;
+
 create table apartment_info(
    i_ai int unsigned primary key auto_increment,
    deal_amount int unsigned not null ,
-   build_year char(4) not null ,
-   deal_year char(4) not null ,
-   deal_month char(2) not null ,
-   deal_day char(6) not null ,
+   build_year int not null ,
+   deal_year int not null ,
+   deal_month int not null ,
+   deal_day int not null ,
    dong nvarchar(40) not null ,
    apartment_name nvarchar(40) not null ,
    area_for_exclusive_use float not null ,
